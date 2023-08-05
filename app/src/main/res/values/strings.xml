@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">mainrobot</string>
+    <string name="navigation_drawer_open">open navigation drawer</string>
+    <string name="navigation_drawer_close">close navigation drawer</string>
+    <string name="nav_header_title">RobotCar</string>
+    <string name="nav_header_subtitle">user@use.com</string>
+    <string name="nav_header_desc">navigation header</string>
+    <string name="action_settings">settings</string>
+
+    <string name="menu_home">home</string>
+    <string name="menu_app_settings">App Settings</string>
+    <string name="menu_camera_settings">Camera Settings</string>
+    <string name="menu_robotcar">RobotCar</string>
+    <string name="menu_configurations">App Settings</string>
+    <string name="menu_logout">logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="connect">connect</string>
+</resources>

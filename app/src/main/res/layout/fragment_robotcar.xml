@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.example.mainrobot.JoystickView
+        android:id="@+id/joystick_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:alpha="1.1"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:layout_above="@id/switchButton" />
+
+    <TextView
+        android:id="@+id/joystick_top_coordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/joystick_top"
+        android:layout_alignStart="@id/joystick_top"
+        android:layout_marginTop="8dp"
+        android:text="X: 0.00\nY: 0.00"
+        android:textColor="#7F7F7F" />
+
+    <com.example.mainrobot.JoystickView
+        android:id="@+id/joystick_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:alpha="1.1"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:layout_above="@id/switchButton" />
+
+    <TextView
+        android:id="@+id/joystick_bottom_coordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/joystick_bottom"
+        android:layout_alignEnd="@id/joystick_bottom"
+        android:layout_marginTop="8dp"
+        android:text="X: 0.00\nY: 0.00"
+        android:textColor="#7F7F7F" />
+
+    <Switch
+        android:id="@+id/switchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Front/Back"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        style="@style/WhiteSwitchText"/>
+
+    <TextView
+        android:id="@+id/textDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Distance: N/A"
+        android:textColor="#FDFCFC"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry"
+        android:layout_above="@id/joystick_top"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textPan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pan: 0°"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textTilt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tilt: 0°"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@id/textPan" />
+
+</RelativeLayout>
+
+

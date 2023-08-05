@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme -->
+<!--    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--    </style>-->
+
+    <!-- Custom style for white text on the Switch -->
+    <style name="WhiteSwitchText" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="CustomSwitch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:thumbTint">#FF0000</item> <!-- Set the color of the thumb (switch handle) -->
+        <item name="android:trackTint">#000000</item> <!-- Set the color of the track (switch background) -->
+    </style>
+
+</resources>
